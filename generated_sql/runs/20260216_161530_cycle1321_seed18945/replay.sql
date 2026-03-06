@@ -1,0 +1,18 @@
+DROP DATABASE IF EXISTS database0;
+CREATE DATABASE database0;
+USE database0;
+CREATE TABLE t0(c0 FLOAT ZEROFILL , c1 FLOAT  COLUMN_FORMAT FIXED UNIQUE COMMENT 'asdf'   ) STATS_SAMPLE_PAGES = 27338, COMPRESSION = 'NONE'; -- 41ms;
+DELETE LOW_PRIORITY IGNORE FROM t0; -- 2ms;
+DROP INDEX c1 ON t0 ALGORITHM=DEFAULT LOCK=DEFAULT; -- 25ms;
+SET SESSION read_rnd_buffer_size = 1297842963; -- 1ms;
+CHECK TABLE t0 MEDIUM; -- 1ms;
+UPDATE t0 SET c1=NULL, c0=DEFAULT WHERE NULL; -- 1ms;
+ALTER TABLE t0 ENABLE KEYS, STATS_PERSISTENT 1, ALGORITHM COPY, INSERT_METHOD FIRST, ROW_FORMAT COMPACT, CHECKSUM 1, COMPRESSION 'LZ4', FORCE, PACK_KEYS 0, DROP COLUMN c1, DELAY_KEY_WRITE 0, RENAME t0; -- 85ms;
+UPDATE t0 SET c0="" WHERE (((CASE t0.c0 WHEN NULL THEN t0.c0 ELSE t0.c0 END)) || ((! (NULL)))) <= (-2103674757); -- 2ms;
+SET GLOBAL optimizer_switch = 'materialization=on,prefer_ordering_index=on,index_merge_sort_union=on,use_index_extensions=off,index_merge=on,semijoin=on,index_merge_union=off,mrr=off,firstmatch=off,condition_fanout_filter=off,mrr_cost_based=on,loosescan=on,subquery_to_derived=off,block_nested_loop=on,index_condition_pushdown=off,skip_scan=on,index_merge_intersection=on,batched_key_access=off'; -- 1ms;
+UPDATE t0 SET c0=DEFAULT WHERE -211313464; -- 1ms;
+DELETE QUICK IGNORE FROM t0 WHERE -139300072; -- 1ms;
+DELETE IGNORE FROM t0 WHERE NULL; -- 1ms;
+UPDATE t0 SET c0='L]'; -- 1ms;
+ANALYZE  TABLE t0; -- 15ms;
+SET SESSION optimizer_search_depth = 24; -- 1ms;

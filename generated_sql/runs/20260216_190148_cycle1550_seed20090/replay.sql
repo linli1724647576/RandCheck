@@ -1,0 +1,13 @@
+DROP DATABASE IF EXISTS database0;
+CREATE DATABASE database0;
+USE database0;
+CREATE TABLE t0(c0 DOUBLE   STORAGE MEMORY COLUMN_FORMAT DYNAMIC) ; -- 13ms;
+ALTER TABLE t0 DELAY_KEY_WRITE 1, ROW_FORMAT REDUNDANT, RENAME TO t0, FORCE, ALGORITHM COPY, PACK_KEYS DEFAULT, CHECKSUM 0; -- 29ms;
+CHECKSUM TABLE t0; -- 1ms;
+SET GLOBAL host_cache_size = 18345; -- 1ms;
+SET GLOBAL bulk_insert_buffer_size = 8731065677894374396; -- 0ms;
+CHECK TABLE t0 FAST MEDIUM EXTENDED; -- 1ms;
+CREATE INDEX i0 USING HASH ON t0(c0 DESC) ALGORITHM= COPY; -- 17ms;
+SET GLOBAL optimizer_switch = 'hash_join=off,subquery_to_derived=on,index_merge=off,duplicateweedout=on,skip_scan=off,index_condition_pushdown=off,firstmatch=on,mrr=off,materialization=off,index_merge_sort_union=off,block_nested_loop=on,index_merge_intersection=on,prefer_ordering_index=off,derived_merge=off,mrr_cost_based=on,use_index_extensions=off,semijoin=off,derived_condition_pushdown=off,subquery_materialization_cost_based=off,condition_fanout_filter=off,loosescan=off,batched_key_access=off,use_invisible_indexes=off'; -- 1ms;
+ALTER TABLE t0 ROW_FORMAT REDUNDANT, DISABLE KEYS; -- 37ms;
+ANALYZE  TABLE t0; -- 4ms;

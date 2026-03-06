@@ -1,0 +1,3 @@
+DROP DATABASE IF EXISTS database0;
+CREATE DATABASE database0;
+USE database0;

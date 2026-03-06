@@ -1,0 +1,41 @@
+# SQL鏌ヨ鐢熸垚閿欒鏃ュ織 - 2026-03-06 22:51:09
+# 鐩爣鏌ヨ鏁伴噺: 1000
+
+[31/1000] 鐢熸垚澶辫触:
+  閿欒绫诲瀷: NameError
+  閿欒淇℃伅: name 'get_required_geometry_type' is not defined
+  閲嶈瘯娆℃暟: 10
+
+[255/1000] 鐢熸垚澶辫触:
+  閿欒绫诲瀷: NameError
+  閿欒淇℃伅: name 'get_required_geometry_type' is not defined
+  閲嶈瘯娆℃暟: 10
+
+[274/1000] 鐢熸垚澶辫触:
+  閿欒绫诲瀷: AttributeError
+  閿欒淇℃伅: 'tuple' object has no attribute 'name'
+  閲嶈瘯娆℃暟: 10
+
+[670/1000] 鐢熸垚澶辫触:
+  閿欒绫诲瀷: NameError
+  閿欒淇℃伅: name 'get_required_geometry_type' is not defined
+  閲嶈瘯娆℃暟: 10
+
+[888/1000] 鐢熸垚澶辫触:
+  閿欒绫诲瀷: NameError
+  閿欒淇℃伅: name 'get_required_geometry_type' is not defined
+  閲嶈瘯娆℃暟: 10
+
+=== 鎵规 1 瀹屾垚 ===
+鎵规鏌ヨ鎬绘暟: 1000
+鎴愬姛鐢熸垚: 995
+鐢熸垚澶辫触: 5
+閿欒绫诲瀷缁熻: {'NameError': 4, 'AttributeError': 1}
+
+=== 鏈€缁堢粺璁′俊鎭?===
+鐩爣鏌ヨ鏁伴噺: 1000
+鎴愬姛鐢熸垚: 998
+鐢熸垚澶辫触: 2
+鐢熸垚鐜? 99.80%
+
+鐢熸垚鏃ュ織鍒涘缓鏃堕棿: 2026-03-06 22:51:10

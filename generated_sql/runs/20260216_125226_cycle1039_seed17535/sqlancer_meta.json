@@ -1,0 +1,11 @@
+{
+  "log_path": "E:\\Pinolo_Extension-main \uff081\uff09\\sqlancer_logs\\logs\\mysql\\database0-cur.log",
+  "generated_at": "2026-02-16 12:52:26",
+  "dialect": "MYSQL",
+  "seed_value": "17537",
+  "database": "database0",
+  "schema_count": 56,
+  "seed_count": 1578,
+  "include_db_management": true,
+  "selects_after_last_mutation": true
+}

@@ -1,0 +1,9 @@
+Program started at: 2026-03-05 23:30:47
+Dialect set to: tidb
+Use extension: True
+Begin loop execution for up to 5 hour(s).
+
+===== Cycle 1 start =====
+Start generating SQL...
+SQL generation completed in 1.32s.
+Start generating seed queries...

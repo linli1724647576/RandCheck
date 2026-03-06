@@ -1,0 +1,12 @@
+DROP DATABASE IF EXISTS database0;
+CREATE DATABASE database0;
+USE database0;
+CREATE TABLE t0(c0 DECIMAL  COMMENT 'asdf'  COLUMN_FORMAT DYNAMIC STORAGE MEMORY  , c1 FLOAT ) ; -- 15ms;
+SET GLOBAL optimizer_search_depth = 55; -- 1ms;
+CREATE INDEX i0 USING BTREE ON t0((IF((t0.c1) IN ('AI'), (t0.c0) IN (t0.c0), (t0.c1) IN (t0.c0)))); -- 16ms;
+SET SESSION max_heap_table_size = 675830570170622805; -- 1ms;
+CREATE UNIQUE INDEX i1 ON t0(c0, c1); -- 9ms;
+TRUNCATE TABLE t0; -- 23ms;
+SET SESSION foreign_key_checks = 1; -- 0ms;
+SET GLOBAL max_seeks_for_key = 4597964613433292085; -- 1ms;
+CREATE UNIQUE INDEX i2 ON t0((t0.c1), (NULL)) INVISIBLE; -- 18ms;

@@ -1,0 +1,11 @@
+Program started at: 2026-03-06 22:51:09
+Dialect set to: mysql
+Use extension: True
+Begin loop execution for up to 5 hour(s).
+
+===== Cycle 1 start =====
+Start generating SQL...
+SQL generation completed in 0.92s.
+Start generating seed queries...
+Seed query generation completed in 6.27s.
+Start presolve...

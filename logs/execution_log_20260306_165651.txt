@@ -1,0 +1,29 @@
+Program started at: 2026-03-06 16:56:51
+Dialect set to: mysql
+Use extension: True
+Begin loop execution for up to 5 hour(s).
+
+===== Cycle 1 start =====
+Start generating SQL...
+SQL generation completed in 0.98s.
+Start generating seed queries...
+Seed query generation completed in 5.63s.
+Start presolve...
+Presolve completed in 4.11s.
+Cycle 1 done. elapsed=10.73s remaining=17989.27s
+
+===== Cycle 2 start =====
+Start generating SQL...
+SQL generation completed in 0.98s.
+Start generating seed queries...
+Seed query generation completed in 5.84s.
+Start presolve...
+Presolve completed in 4.18s.
+Cycle 2 done. elapsed=21.76s remaining=17978.24s
+
+===== Cycle 3 start =====
+Start generating SQL...
+SQL generation completed in 0.87s.
+Start generating seed queries...
+Seed query generation completed in 5.59s.
+Start presolve...
